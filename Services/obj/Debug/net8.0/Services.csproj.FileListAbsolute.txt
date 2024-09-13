@@ -1,0 +1,17 @@
+D:\tccbProject\AppSystem\Services\bin\Debug\net8.0\Services.deps.json
+D:\tccbProject\AppSystem\Services\bin\Debug\net8.0\Services.dll
+D:\tccbProject\AppSystem\Services\bin\Debug\net8.0\Services.pdb
+D:\tccbProject\AppSystem\Services\bin\Debug\net8.0\Entities.dll
+D:\tccbProject\AppSystem\Services\bin\Debug\net8.0\Repositories.dll
+D:\tccbProject\AppSystem\Services\bin\Debug\net8.0\Entities.pdb
+D:\tccbProject\AppSystem\Services\bin\Debug\net8.0\Repositories.pdb
+D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\Services.dll
+D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\refint\Services.dll
+D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\Services.pdb
+D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\ref\Services.dll

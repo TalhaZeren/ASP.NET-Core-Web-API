@@ -1,0 +1,15 @@
+D:\tccbProject\AppSystem\Repositories\bin\Debug\net8.0\Repositories.deps.json
+D:\tccbProject\AppSystem\Repositories\bin\Debug\net8.0\Repositories.dll
+D:\tccbProject\AppSystem\Repositories\bin\Debug\net8.0\Repositories.pdb
+D:\tccbProject\AppSystem\Repositories\bin\Debug\net8.0\Entities.dll
+D:\tccbProject\AppSystem\Repositories\bin\Debug\net8.0\Entities.pdb
+D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\Reposito.787EC4B2.Up2Date
+D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\Repositories.dll
+D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\Repositories.pdb
+D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\ref\Repositories.dll
