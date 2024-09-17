@@ -10,9 +10,9 @@ namespace Services.Contracts
 {
     public interface IUserService
     {
-        IEnumerable<User> GetAllUsers(bool trackChanges);
-        User GetOneUser(int id,bool trackChanges);
-        User CreateOneUser(User user);
+        IEnumerable<UserDto> GetAllUsers(bool trackChanges);
+        UserDto GetOneUser(int id,bool trackChanges);
+        UserDto CreateOneUser(UserDtoForInsertion userDtoInsertion);
         void UpdateOneUser(int id,UserDtoForUpdate userDto,bool trackChanges);
         void DeleteOneUser(int id,bool trackChanges);
 

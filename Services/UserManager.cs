@@ -24,15 +24,17 @@ namespace Services
             _mapper = mapper;
         }
 
-        public User CreateOneUser(User user)
+        public UserDto CreateOneUser(UserDtoForInsertion userDtoInsert)
         {
-            if(user is null)
+            if(userDtoInsert is null)
             {
-                throw new ArgumentNullException(nameof(user));
+                throw new ArgumentNullException(nameof(userDtoInsert));
             }
-            _manager.User.CreateOneUser(user);
+           var entity =  _mapper.Map<User>(userDtoInsert);
+            _manager.User.CreateOneUser(entity); // Saved to database and after that; 
             _manager.Save();
-            return user;
+            return _mapper.Map<UserDto>(entity); // returned UserDto to View certain
+                                                 // data from service to contoller.
         }
         public void DeleteOneUser(int id, bool trackChanges)
         {
@@ -45,12 +47,13 @@ namespace Services
             _manager.User.DeleteOneUser(entity);
             _manager.Save();
         }
-        public IEnumerable<User> GetAllUsers(bool trackChanges)
+        public IEnumerable<UserDto> GetAllUsers(bool trackChanges)
         {
-           return _manager.User.GetAllUsers(trackChanges);
+           var user = _manager.User.GetAllUsers(trackChanges);
+           return _mapper.Map<IEnumerable<UserDto>>(user);  
         }
 
-        public User GetOneUser(int id, bool trackChanges)
+        public UserDto GetOneUser(int id, bool trackChanges)
         {
 
             var  user = _manager.User.GetOneUser(id,trackChanges);
@@ -58,7 +61,7 @@ namespace Services
             {
                 throw new UserNotFoundException(id);
             }
-            return user;    
+           return _mapper.Map<UserDto>(user);
         }
 
         public void UpdateOneUser(int id, UserDtoForUpdate userDto, bool trackChanges)
@@ -73,6 +76,7 @@ namespace Services
             //entity.Name = user.Name;
             //entity.Surname = user.Surname;
             //entity.City = user.City;    
+            // instead of these; AutoMapper was used.
 
             entity = _mapper.Map<User>(userDto); // Auto Mapping is completing...
 

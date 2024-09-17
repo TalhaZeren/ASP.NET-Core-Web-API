@@ -46,15 +46,19 @@ namespace Presentation.Controllers
 
         }
         [HttpPost]
-        public IActionResult CreateOneUser([FromBody] User user)
+        public IActionResult CreateOneUser([FromBody] UserDtoForInsertion userDto)
         {
 
-            if (user is null)
+            if (userDto is null)
             {
                 return BadRequest();    // 400;
             }
-            _manager.UserService.CreateOneUser(user);
-            return StatusCode(201, user);
+            if (!ModelState.IsValid)
+            {
+            return UnprocessableEntity(ModelState);  // Validation Control 
+            }
+            var entity =  _manager.UserService.CreateOneUser(userDto);
+            return StatusCode(201, entity);
 
         }
 
@@ -65,6 +69,11 @@ namespace Presentation.Controllers
             if (userDto is null)
             {
                 return BadRequest();    // 400;
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return UnprocessableEntity(ModelState);  // Validation Control 
             }
 
             _manager.UserService.UpdateOneUser(id, userDto, true);
@@ -82,14 +91,20 @@ namespace Presentation.Controllers
         }
 
         [HttpPatch("{id:int}")]
-        public IActionResult PartiallyUpdateUser([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<User> userPatch)
+        public IActionResult PartiallyUpdateUser([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<UserDto> userPatch)
         {
             var entity = _manager.UserService.GetOneUser(id, true);
 
             userPatch.ApplyTo(entity);
 
             _manager.UserService.UpdateOneUser(id,
-                new UserDtoForUpdate(entity.Id, entity.Name, entity.Surname, entity.City),
+                new UserDtoForUpdate
+                {
+                    Id = id,
+                    Name = entity.Name,
+                    Surname = entity.Surname,
+                    City = entity.City
+                },
                 true);  // it will be arranged again...
 
             return NoContent();

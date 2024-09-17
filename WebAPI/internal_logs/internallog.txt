@@ -74,3 +74,55 @@
 2024-09-17 11:58:12.9278 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
 2024-09-17 11:58:12.9278 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\tccbProject\AppSystem\WebAPI\nlog.config
 2024-09-17 11:58:12.9465 Info Configuration initialized.
+2024-09-17 14:16:53.1370 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-17 14:16:53.1687 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-17 14:16:53.1767 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\tccbProject\AppSystem\WebAPI\nlog.config
+2024-09-17 14:16:53.1767 Info Configuration initialized.
+2024-09-17 14:20:16.0233 Info AppDomain Shutting down. LogFactory closing...
+2024-09-17 14:20:16.0233 Info LogFactory has been closed.
+2024-09-17 14:20:21.4025 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-17 14:20:21.4137 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-17 14:20:21.4137 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\tccbProject\AppSystem\WebAPI\nlog.config
+2024-09-17 14:20:21.4296 Info Configuration initialized.
+2024-09-17 14:35:20.7665 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-17 14:35:20.7775 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-17 14:35:20.7775 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\tccbProject\AppSystem\WebAPI\nlog.config
+2024-09-17 14:35:20.7941 Info Configuration initialized.
+2024-09-17 15:02:45.8974 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-17 15:02:45.8974 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-17 15:02:45.9155 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\tccbProject\AppSystem\WebAPI\nlog.config
+2024-09-17 15:02:45.9155 Info Configuration initialized.
+2024-09-17 15:07:18.0640 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-17 15:07:18.0748 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-17 15:07:18.0825 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\tccbProject\AppSystem\WebAPI\nlog.config
+2024-09-17 15:07:18.0825 Info Configuration initialized.
+2024-09-17 15:07:27.9000 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-17 15:07:27.9114 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-17 15:07:27.9114 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\tccbProject\AppSystem\WebAPI\nlog.config
+2024-09-17 15:07:27.9282 Info Configuration initialized.
+2024-09-17 15:07:38.0837 Info AppDomain Shutting down. LogFactory closing...
+2024-09-17 15:07:38.0837 Info LogFactory has been closed.
+2024-09-17 15:07:39.4946 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-17 15:07:39.5054 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-17 15:07:39.5054 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\tccbProject\AppSystem\WebAPI\nlog.config
+2024-09-17 15:07:39.5211 Info Configuration initialized.
+2024-09-17 15:53:50.2148 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-17 15:53:50.2276 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-17 15:53:50.2276 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\tccbProject\AppSystem\WebAPI\nlog.config
+2024-09-17 15:53:50.2462 Info Configuration initialized.
+2024-09-17 16:24:21.4069 Info AppDomain Shutting down. LogFactory closing...
+2024-09-17 16:24:21.4183 Info LogFactory has been closed.
+2024-09-17 17:36:07.1304 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-17 17:36:07.1433 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-17 17:36:07.1521 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\tccbProject\AppSystem\WebAPI\nlog.config
+2024-09-17 17:36:07.1672 Info Configuration initialized.
+2024-09-17 17:46:38.5612 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-17 17:46:38.5712 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-17 17:46:38.5712 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\tccbProject\AppSystem\WebAPI\nlog.config
+2024-09-17 17:46:38.5858 Info Configuration initialized.
+2024-09-17 17:46:45.1201 Info AppDomain Shutting down. LogFactory closing...
+2024-09-17 17:46:45.1201 Info LogFactory has been closed.
+2024-09-17 17:46:48.0651 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-17 17:46:48.0754 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-17 17:46:48.0825 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\tccbProject\AppSystem\WebAPI\nlog.config
+2024-09-17 17:46:48.0825 Info Configuration initialized.
