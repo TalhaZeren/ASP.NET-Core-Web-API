@@ -1,4 +1,6 @@
-﻿using Entities.Models;
+﻿using Entities.DataTransferObject;
+using Entities.Exceptions;
+using Entities.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
@@ -14,7 +16,6 @@ namespace Presentation.Controllers
     [Route("api/users")]
     public class UserController : ControllerBase
     {
-
         private readonly IServiceManager _manager;
 
         public UserController(IServiceManager manager)
@@ -33,101 +34,66 @@ namespace Presentation.Controllers
 
         public IActionResult GetOneUser([FromRoute(Name = "id")] int id) // Necessary to clean code.
         {
-            try
-            {
-                var user = _manager.UserService.GetOneUser(id, false);
 
-                if (user is null)
-                {
-                    return NotFound();
-                }
-                return Ok(user);
+            var user = _manager.UserService.GetOneUser(id, false);
 
-            }
-            catch (Exception ex)
+            if (user is null)
             {
-                throw new Exception(ex.Message);
+               throw new UserNotFoundException(id);
             }
+            return Ok(user);
+
+
         }
-
         [HttpPost]
         public IActionResult CreateOneUser([FromBody] User user)
         {
-            try
+
+            if (user is null)
             {
-                if (user is null)
-                {
-                    return BadRequest();    // 400;
-                }
-                _manager.UserService.CreateOneUser(user);
-                return StatusCode(201, user);
+                return BadRequest();    // 400;
             }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            _manager.UserService.CreateOneUser(user);
+            return StatusCode(201, user);
+
         }
 
         [HttpPut("{id:int}")]
 
-        public IActionResult UpdateOneUser([FromRoute(Name = "id")] int id, [FromBody] User user)
+        public IActionResult UpdateOneUser([FromRoute(Name = "id")] int id, [FromBody] UserDtoForUpdate userDto)
         {
-            try
+            if (userDto is null)
             {
-                if (user is null)
-                {
-                    return BadRequest();    // 400;
-                }
-
-                _manager.UserService.UpdateOneUser(id, user, true);
-
-                return NoContent(); // 204;
-
+                return BadRequest();    // 400;
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+
+            _manager.UserService.UpdateOneUser(id, userDto, true);
+
+            return NoContent(); // 204;
         }
 
         [HttpDelete("{id:int}")]
 
         public IActionResult DeleteUser([FromRoute(Name = "id")] int id)
         {
+            _manager.UserService.DeleteOneUser(id, true);
+            return NoContent(); // 204
 
-            try
-            {
-                _manager.UserService.DeleteOneUser(id, true);
-                return NoContent(); // 204
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
         }
-
 
         [HttpPatch("{id:int}")]
         public IActionResult PartiallyUpdateUser([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<User> userPatch)
         {
-            try
-            {
-                var entity = _manager.UserService.GetOneUser(id, false);
+            var entity = _manager.UserService.GetOneUser(id, true);
 
-                if (entity == null || id != entity.Id)
-                {
-                    return NotFound();
-                }
+            userPatch.ApplyTo(entity);
 
-                userPatch.ApplyTo(entity);
-                _manager.UserService.UpdateOneUser(id, entity, true);
+            _manager.UserService.UpdateOneUser(id,
+                new UserDtoForUpdate(entity.Id, entity.Name, entity.Surname, entity.City),
+                true);  // it will be arranged again...
 
-                return NoContent();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            return NoContent();
+
         }
 
 

@@ -17,3 +17,4 @@ D:\tccbProject\AppSystem\Presentation\obj\Debug\net8.0\Presentation.dll
 D:\tccbProject\AppSystem\Presentation\obj\Debug\net8.0\refint\Presentation.dll
 D:\tccbProject\AppSystem\Presentation\obj\Debug\net8.0\Presentation.pdb
 D:\tccbProject\AppSystem\Presentation\obj\Debug\net8.0\ref\Presentation.dll
+D:\tccbProject\AppSystem\Presentation\obj\Debug\net8.0\Presentation.sourcelink.json

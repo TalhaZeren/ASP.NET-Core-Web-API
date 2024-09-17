@@ -13,3 +13,4 @@ D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\Repositories.dll
 D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\refint\Repositories.dll
 D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\Repositories.pdb
 D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\ref\Repositories.dll
+D:\tccbProject\AppSystem\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json

@@ -15,3 +15,4 @@ D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\Services.dll
 D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\refint\Services.dll
 D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\Services.pdb
 D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\ref\Services.dll
+D:\tccbProject\AppSystem\Services\obj\Debug\net8.0\Services.sourcelink.json

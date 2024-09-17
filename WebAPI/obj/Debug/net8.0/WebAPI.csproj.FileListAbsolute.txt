@@ -147,3 +147,8 @@ D:\tccbProject\AppSystem\WebAPI\bin\Debug\net8.0\Services.dll
 D:\tccbProject\AppSystem\WebAPI\bin\Debug\net8.0\Services.pdb
 D:\tccbProject\AppSystem\WebAPI\bin\Debug\net8.0\Presentation.dll
 D:\tccbProject\AppSystem\WebAPI\bin\Debug\net8.0\Presentation.pdb
+D:\tccbProject\AppSystem\WebAPI\bin\Debug\net8.0\nlog.config
+D:\tccbProject\AppSystem\WebAPI\bin\Debug\net8.0\NLog.dll
+D:\tccbProject\AppSystem\WebAPI\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+D:\tccbProject\AppSystem\WebAPI\obj\Debug\net8.0\WebAPI.sourcelink.json
+D:\tccbProject\AppSystem\WebAPI\bin\Debug\net8.0\AutoMapper.dll
