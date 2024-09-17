@@ -91,22 +91,24 @@ namespace Presentation.Controllers
         }
 
         [HttpPatch("{id:int}")]
-        public IActionResult PartiallyUpdateUser([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<UserDto> userPatch)
+        public IActionResult PartiallyUpdateUser([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<UserDtoForUpdate> userPatch)
         {
-            var entity = _manager.UserService.GetOneUser(id, true);
 
-            userPatch.ApplyTo(entity);
+            if(userPatch is null)
+            {
+                return BadRequest();
+            }
 
-            _manager.UserService.UpdateOneUser(id,
-                new UserDtoForUpdate
-                {
-                    Id = id,
-                    Name = entity.Name,
-                    Surname = entity.Surname,
-                    City = entity.City
-                },
-                true);  // it will be arranged again...
+            var entity = _manager.UserService.GetOneUserForPatch(id, true);
 
+            userPatch.ApplyTo(entity.userDtoForUpdate,ModelState);
+
+            TryValidateModel(entity.userDtoForUpdate);
+            if (!ModelState.IsValid)
+            {
+                return UnprocessableEntity(ModelState);
+            }
+            _manager.UserService.SaveChangesForPatch(entity.userDtoForUpdate, entity.user);
             return NoContent();
 
         }

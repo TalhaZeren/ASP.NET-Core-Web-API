@@ -64,6 +64,23 @@ namespace Services
            return _mapper.Map<UserDto>(user);
         }
 
+        public (UserDtoForUpdate userDtoForUpdate, User user) GetOneUserForPatch(int id, bool trackChanges)
+        {
+            var user = _manager.User.GetOneUser(id, trackChanges);
+            if (user is null)
+            {
+                throw new UserNotFoundException(id);
+            }
+            var userDtoForUpdate = _mapper.Map<UserDtoForUpdate>(user);
+            return (userDtoForUpdate, user);
+        }
+
+        public void SaveChangesForPatch(UserDtoForUpdate userDtoForUpdate, User user)
+        {
+            _mapper.Map(userDtoForUpdate, user);
+            _manager.Save();
+        }
+
         public void UpdateOneUser(int id, UserDtoForUpdate userDto, bool trackChanges)
         {
             // check the entity for exsisting 

@@ -16,5 +16,9 @@ namespace Services.Contracts
         void UpdateOneUser(int id,UserDtoForUpdate userDto,bool trackChanges);
         void DeleteOneUser(int id,bool trackChanges);
 
+        (UserDtoForUpdate userDtoForUpdate, User user) GetOneUserForPatch(int id,bool trackChanges);    
+
+        void SaveChangesForPatch(UserDtoForUpdate userDtoForUpdate, User user);
+
     }
 }

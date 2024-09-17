@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 
 
-// Add services to the container.
+// Add services to the container.W
 builder.Services.AddControllers(config =>
 {
     config.RespectBrowserAcceptHeader = true;
